@@ -3,19 +3,101 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
-timezone:
+title: Jamme
+subtitle: This is Jamme
+author: JammeLee
+language: zh-CN
+timezone: Asia/Shanghai
+
+# custom Site settings
+# more detail check out docs
+SEOTitle: JammeLee's blog 
+header-img: /2018/03/31/hello/wallpaper-2572384.jpg #//o7bkkhiex.bkt.clouddn.com/lion-blur-bg.jpg 文章默认标题图片
+email: jamme_lee@outlook.com
+description: "JammeLee的博客"
+keyword: # seo key words
+
+favicon: #/2018/03/31/hello/wallpaper-2572384.png # your favicon png 浏览器标题栏icon
+# custom end
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://jammelee.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
+
+# SNS settings
+# RSS:
+weibo_username: L-Jamme、
+zhihu_username: zzz
+github_username: JammeLee
+twitter_username: Jamme
+facebook_username:  
+linkedin_username:  
+
+# Build settings
+anchorjs: false                        # if you want to customize anchor. check out line:181 of `post.html`
+
+
+# Disqus settings 
+# disqus_shortname: #jamme-blog
+disqus_username: #jamme-blog #jamme-blog.disqus.com
+# # comment_provider: disqus
+# disqus_proxy:
+  # shortname: jamme-blog
+  # username: JammeLee
+  # host: 176.122.130.4
+  # port: 443
+
+
+# Duoshuo settings
+duoshuo_username:  # 你的多说帐号
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: false                     # set to false if you want to use Comment without Sharing
+
+# Use livere
+use_livere: true
+livere_uid: MTAyMC8zNTM2NS8xMTkwMQ==
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id:
+# Google Analytics
+ga_track_id:             # Format: UA-xxxxxx-xx
+ga_domain:
+
+# Sidebar settings
+sidebar-about-description: 一只孤独的程序猿 # 个人描述
+sidebar-avatar: /head.jpg    # use absolute URL
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+# friends
+# 友链, 请务必按以下格式书写
+# friends: [
+#   {
+#     title: "your friend title",
+#     href: "your fiend path"
+#   },
+#   {
+#     title: "your friend title 2",
+#     href: "your friend path 2"
+#   }
+# ]
+friends:  [
+  {
+    title: "Home",
+    href: "https://JammeLee.github.io"
+  },
+  # {
+  #   title: "your friend title 2",
+  #   href: "your friend path 2"
+  # }
+]
 
 # Directory
 source_dir: source
@@ -34,7 +116,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -54,7 +136,7 @@ index_generator:
   
 # Category & Tag
 default_category: uncategorized
-category_map:
+category_map: 
 tag_map:
 
 # Date / Time format
@@ -71,13 +153,47 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+
+markdown:
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-emoji
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: Anisina
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/JammeLee/jamme_lee.github.blog.git
-  # repo: git@github.com/JammeLee/jamme_lee.github.blog.git
+  # repo: https://github.com/JammeLee/jamme_lee.github.blog.git
+  repo: git@github.com:JammeLee/JammeLee.github.io.git
   branch: master
+
+# img CDN path
+# cdn-url:  # 你的CDN地址
+
+# Qiniu imageView2 API
+# More info http://developer.qiniu.com/code/v6/api/kodo-api/image/imageview2.html
+# clip-content: "/2018/03/31/hello/wallpaper-2572384.png"
+# clip-avatar: "/2018/03/31/hello/wallpaper-2572384.png"
+# clip-home-post-bg: "/2018/03/31/hello/wallpaper-2572384.png"
+
+# post default images
+post-default-img: /2018/03/31/hello/wallpaper-2572384.png #博文默认的图片
+post-default-img-mobile: /2018/03/31/hello/wallpaper-2572384.png #移动端显示的图片
+
+# search api , set your custom key
+swiftype_key: 
+
+
+# archive page title 
+archive:
+    title: archives
+    description: 可以根据归档日期检索所有文件
