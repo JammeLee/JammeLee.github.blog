@@ -39,6 +39,8 @@ linkedin_username:
 # Build settings
 anchorjs: false                        # if you want to customize anchor. check out line:181 of `post.html`
 
+mathjax:
+  enable: true
 
 # Disqus settings 
 # disqus_shortname: #jamme-blog
