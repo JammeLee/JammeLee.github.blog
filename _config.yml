@@ -4,79 +4,35 @@
 
 # Site
 title: Jamme
-subtitle: This is Jamme
-author: JammeLee
+subtitle: This is Jamme's blog
+author: Jamme
 language: zh-CN
 timezone: Asia/Shanghai
 
-# custom Site settings
-# more detail check out docs
-SEOTitle: JammeLee's blog 
-header-img: /2018/03/31/hello/wallpaper-2572384.jpg #//o7bkkhiex.bkt.clouddn.com/lion-blur-bg.jpg 文章默认标题图片
-email: jamme_lee@outlook.com
-description: "JammeLee的博客"
-keyword: # seo key words
-
-favicon: #/2018/03/31/hello/wallpaper-2572384.png # your favicon png 浏览器标题栏icon
-# custom end
-
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://jammelee.github.io
+url: http://blog.jammelee.top #http://jammelee.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
-# SNS settings
-# RSS:
-weibo_username: L-Jamme、
-zhihu_username: zzz
-github_username: JammeLee
-twitter_username: Jamme
-facebook_username:  
-linkedin_username:  
-
 # Build settings
 anchorjs: false                        # if you want to customize anchor. check out line:181 of `post.html`
 
-mathjax:
-  enable: true
-
-# Disqus settings 
-# disqus_shortname: #jamme-blog
-disqus_username: #jamme-blog #jamme-blog.disqus.com
-# # comment_provider: disqus
-# disqus_proxy:
-  # shortname: jamme-blog
-  # username: JammeLee
-  # host: 176.122.130.4
-  # port: 443
-
-
-# Duoshuo settings
-duoshuo_username:  # 你的多说帐号
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: false                     # set to false if you want to use Comment without Sharing
-
-# Use livere
-use_livere: true
-livere_uid: MTAyMC8zNTM2NS8xMTkwMQ==
+# mathjax:
+#   enable: true
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id:
+# ba_track_id:
 # Google Analytics
-ga_track_id:             # Format: UA-xxxxxx-xx
-ga_domain:
-
-# Sidebar settings
-sidebar-about-description: 一只孤独的程序猿 # 个人描述
-sidebar-avatar: /head.jpg    # use absolute URL
+# ga_track_id:             # Format: UA-xxxxxx-xx
+# ga_domain:
 
 
 # Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+# featured-tags: true                     # whether or not using Feature-Tags
+# featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
 # friends
 # 友链, 请务必按以下格式书写
@@ -90,16 +46,6 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 #     href: "your friend path 2"
 #   }
 # ]
-friends:  [
-  {
-    title: "Home",
-    href: "https://JammeLee.github.io"
-  },
-  # {
-  #   title: "your friend title 2",
-  #   href: "your friend path 2"
-  # }
-]
 
 # Directory
 source_dir: source
@@ -123,7 +69,7 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false #暂时先把行数关掉，防止主页预览时，因为预览字数不够，现实行号的问题
   auto_detect: false
   tab_replace:
   
@@ -145,8 +91,8 @@ tag_map:
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
+# date_format: YYYY-MM-DD
+# time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -165,10 +111,21 @@ markdown:
     - markdown-it-sup
     - markdown-it-emoji
 
+
+search:
+  path: search.xml
+  field: post
+  format: html
+
+auto_excerpt:
+  enable: false
+  length: 50
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: Anisina
+theme: diaspora
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -196,6 +153,6 @@ swiftype_key:
 
 
 # archive page title 
-archive:
-    title: archives
-    description: 可以根据归档日期检索所有文件
+# archive:
+#     title: archives
+#     description: 可以根据归档日期检索所有文件
