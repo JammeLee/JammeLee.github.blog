@@ -4,8 +4,10 @@ title: V2ray+ws+tls
 date: 2020-03-20 23:04:06
 author: JammeLee
 subtitle: V2ray
-tags: 
+categories:
 	- Other
+tags: 
+	- V2ray
 cdn: 'header-off'
 header-img: /2018/03/31/hello/wallpaper-2572384.jpg
 ---
