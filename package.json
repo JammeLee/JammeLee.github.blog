@@ -2,13 +2,18 @@
   "name": "hexo-site",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
+  },
   "hexo": {
-    "version": "4.2.1"
+    "version": "5.4.0"
   },
   "dependencies": {
-    "hexo": "^4.2.1",
-    "hexo-asset-image": "1.0.0",
-    "hexo-deployer-git": "^2.1.0",
+    "hexo": "^5.4.0",
+    "hexo-deployer-git": "^3.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^2.2.0",
@@ -19,6 +24,7 @@
     "hexo-renderer-kramed": "^0.1.4",
     "hexo-renderer-mathjax": "^0.6.0",
     "hexo-renderer-stylus": "^1.1.0",
-    "hexo-server": "^1.0.0"
+    "hexo-server": "^1.0.0",
+    "lodash": "^4.17.21"
   }
 }
