@@ -5,7 +5,7 @@ author: Jamme
 categories:
 	- Computer Graphics
 tags:
-	- Derivation
+	- Games101
 ---
 
 ### Illumination & Shading 
